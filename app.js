@@ -23,7 +23,7 @@ const fetchWeatherData = () => {
             });
 
             const currentMainWeather = data.weather[0].main;
-            const currentMainTemperature = Math.floor(data.main.temp);
+            const currentMainTemperature = Math.floor(data.main.temp); // parseInt can also be use instead of Math.floor()
             const cityName = data.name;
 
             const cityHolder = document.querySelector('h2');
