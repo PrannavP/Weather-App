@@ -4,7 +4,7 @@ const inputField = document.querySelector('input');
 const button = document.querySelector('button');
 
 const fetchWeatherData = () => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputField.value}&units=metric&appid=${apiKey}`)
         .then(response => response.json())
         .then((data) => {
             // console.log(data);
